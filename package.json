@@ -1,0 +1,16 @@
+{
+  "name": "curfew-calendar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ical-generator": "^3.0.0",
+    "luxon": "^2.0.2"
+  }
+}
