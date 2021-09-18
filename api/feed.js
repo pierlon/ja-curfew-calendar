@@ -3,7 +3,6 @@ const generateEvent = require('../lib/generateEvent');
 const ical = require('ical-generator');
 
 const domain = 'ja-curfew-calendar.vercel.app';
-const path = '/feed';
 
 module.exports = (req, res) => {
     if (req.method !== 'GET') {
@@ -15,7 +14,7 @@ module.exports = (req, res) => {
         prodId: `//$${domain}//Jamaica Curfew Calendar//EN`,
         timezone: 'America/Jamaica',
         ttl: 60 * 60, // 1 hour.
-        url: `https://${domain}/${path}`,
+        url: `https://${domain}//api/feed`,
     });
 
     curfews.forEach(curfew => {
