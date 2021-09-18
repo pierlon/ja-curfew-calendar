@@ -5,7 +5,7 @@ const curfews = [
         repeats: {
             freq: 'weekly',
             byDay: ['sa'],
-            until: 'Oct 28, 2021',
+            until: 'Oct 29, 2021',
             exclude: ['Oct 16, 2021, 6:00 PM'], // exclude Heroes' Day weekend.
         },
     },
@@ -15,7 +15,7 @@ const curfews = [
         repeats: {
             freq: 'weekly',
             byDay: ['mo', 'tu', 'we', 'th', 'fr'],
-            until: 'Oct 28, 2021',
+            until: 'Oct 29, 2021',
             exclude: ['Oct 18, 2021, 8:00 PM'], // exclude Heroes' Day.
         },
     },
