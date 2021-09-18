@@ -6,8 +6,9 @@ const curfews = [
     },
     {
         from: 'Sep 18, 2021',
-        to: 'Sep 18, 2021',
+        to: 'Sep 20, 2021',
         duration: '6:00 PM - 5:00 AM',
+        allDay: true,
     },
     {
         from: 'Sep 20, 2021',
@@ -16,8 +17,9 @@ const curfews = [
     },
     {
         from: 'Sep 25, 2021',
-        to: 'Sep 25, 2021',
+        to: 'Sep 27, 2021',
         duration: '6:00 PM - 5:00 AM',
+        allDay: true,
     },
     {
         from: 'Sep 27, 2021',
@@ -26,8 +28,9 @@ const curfews = [
     },
     {
         from: 'Oct 2, 2021',
-        to: 'Oct 2, 2021',
+        to: 'Oct 4, 2021',
         duration: '6:00 PM - 5:00 AM',
+        allDay: true,
     },
     {
         from: 'Oct 4, 2021',
@@ -36,8 +39,9 @@ const curfews = [
     },
     {
         from: 'Oct 9, 2021',
-        to: 'Oct 9, 2021',
+        to: 'Oct 11, 2021',
         duration: '6:00 PM - 5:00 AM',
+        allDay: true,
     },
     {
         from: 'Oct 11, 2021',
@@ -46,8 +50,9 @@ const curfews = [
     },
     {
         from: 'Oct 16, 2021',
-        to: 'Oct 16, 2021',
+        to: 'Oct 18, 2021',
         duration: '6:00 PM - 5:00 AM',
+        allDay: true,
     },
 ];
 
