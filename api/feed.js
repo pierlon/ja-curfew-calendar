@@ -5,7 +5,16 @@ module.exports = (req, res) => {
         return res.status(404);
     }
 
-    const calendar = generateCalendar();
-    calendar.serve(res);
+    try {
+        const calendar = generateCalendar();
+        calendar.serve(res);
+    } catch (e) {
+        console.error(e);
+
+        const statusCode = e.statusCode || 500;
+        const message = e.message || 'Internal Server Error';
+
+        res.status(statusCode).send(message);
+    }
   };
   
