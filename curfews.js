@@ -18,6 +18,7 @@ const curfews = [
             freq: 'weekly',
             byDay: ['mo', 'tu', 'we', 'th', 'fr'],
             until: 'Oct 28, 2021',
+            exclude: ['Oct 18, 2021, 8:00 PM'], // exclude Heroes' Day.
         },
     },
     {
