@@ -1,58 +1,30 @@
 const curfews = [
     {
-        from: 'Sep 15, 2021',
-        to: 'Sep 17, 2021',
-        duration: '7:00 PM - 5:00 AM',
-    },
-    {
         from: 'Sep 18, 2021',
         to: 'Sep 20, 2021',
         duration: '6:00 PM - 5:00 AM',
-        allDay: true,
+        repeats: {
+            freq: 'weekly',
+            byDay: ['sa'],
+            until: 'Oct 28, 2021',
+            exclude: ['Oct 16, 2021', ], // exclude Heroes' Day weekend.
+        },
     },
     {
-        from: 'Sep 20, 2021',
-        to: 'Sep 24, 2021',
+        from: 'Sep 18, 2021',
+        to: 'Sep 19, 2021',
         duration: '8:00 PM - 5:00 AM',
+        repeats: {
+            freq: 'weekly',
+            byDay: ['mo', 'tu', 'we', 'th', 'fr'],
+            until: 'Oct 28, 2021',
+        },
     },
     {
-        from: 'Sep 25, 2021',
-        to: 'Sep 27, 2021',
-        duration: '6:00 PM - 5:00 AM',
-        allDay: true,
-    },
-    {
-        from: 'Sep 27, 2021',
-        to: 'Oct 1, 2021',
-        duration: '8:00 PM - 5:00 AM',
-    },
-    {
-        from: 'Oct 2, 2021',
-        to: 'Oct 4, 2021',
-        duration: '6:00 PM - 5:00 AM',
-        allDay: true,
-    },
-    {
-        from: 'Oct 4, 2021',
-        to: 'Oct 8, 2021',
-        duration: '8:00 PM - 5:00 AM',
-    },
-    {
-        from: 'Oct 9, 2021',
-        to: 'Oct 11, 2021',
-        duration: '6:00 PM - 5:00 AM',
-        allDay: true,
-    },
-    {
-        from: 'Oct 11, 2021',
-        to: 'Oct 15, 2021',
-        duration: '8:00 PM - 5:00 AM',
-    },
-    {
+        // Heroes' Day weekend.
         from: 'Oct 16, 2021',
-        to: 'Oct 18, 2021',
+        to: 'Oct 19, 2021',
         duration: '6:00 PM - 5:00 AM',
-        allDay: true,
     },
 ];
 
