@@ -12,7 +12,7 @@ module.exports = (req, res) => {
         console.error(e);
 
         const statusCode = e.statusCode || 500;
-        const message = e.message || 'Internal Server Error';
+        const message = 'Internal Server Error';
 
         res.status(statusCode).send(message);
     }
