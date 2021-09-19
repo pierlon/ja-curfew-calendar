@@ -1,6 +1,7 @@
 const { DateTime, Settings } = require('luxon');
 
-Settings.defaultZone = 'America/Jamaica';
+const timezone = 'America/Jamaica';
+Settings.defaultZone = timezone;
 
 const curfews = [
     {
@@ -30,4 +31,7 @@ const curfews = [
     },
 ];
 
-module.exports = curfews;
+module.exports = {
+    curfews,
+    timezone,
+};
