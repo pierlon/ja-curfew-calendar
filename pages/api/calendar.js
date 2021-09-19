@@ -1,4 +1,4 @@
-const generateCalendar = require('../lib/generateCalendar');
+const generateCalendar = require('../../lib/generateCalendar');
 
 module.exports = (req, res) => {
     if (req.method !== 'GET') {
