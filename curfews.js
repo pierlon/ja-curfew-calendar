@@ -1,4 +1,6 @@
-const { DateTime } = require('luxon');
+const { DateTime, Settings } = require('luxon');
+
+Settings.defaultZone = 'America/Jamaica';
 
 const curfews = [
     {
