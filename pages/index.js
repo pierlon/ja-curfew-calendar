@@ -5,7 +5,7 @@ import { ShareIcon } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 
 const calendars = [
-    { name: 'Google Calendar', url: '/calendar/google' },
+    { name: 'Google Calendar', url: '/calendar/google', external: true },
     { name: 'Apple Calendar', url: '/calendar/apple' },
     { name: 'Download iCal file', url: '/calendar.ics' },
 ]
@@ -60,20 +60,21 @@ export default function Home() {
                                                 <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
                                                     <div className="py-1">
                                                         {
-                                                            calendars.map(calendar => (
-                                                                <Menu.Item>
+                                                            calendars.map((calendar, i) => (
+                                                                <Menu.Item key={i}>
                                                                     {({ active }) => (
+                                                                        // eslint-disable-next-line react/jsx-no-target-blank
                                                                         <a
-                                                                            href={ calendar.url }
-                                                                            target={ calendar.name === 'Google Calendar' ? '_blank' : null }
-                                                                            rel={ calendar.name === 'Google Calendar' ? 'noopener' : null }
+                                                                            href={calendar.url}
+                                                                            target={calendar.external ? '_blank' : null}
+                                                                            rel={calendar.external ? 'noopener noreferrer' : null}
                                                                             className={classNames(
                                                                                 active ? 'bg-indigo-100 text-indigo-900' : 'text-indigo-700',
                                                                                 'block px-4 py-2 text-sm',
                                                                                 'md:py-2 md:text-base'
                                                                             )}
                                                                         >
-                                                                            { calendar.name }
+                                                                            {calendar.name}
                                                                         </a>
                                                                     )}
                                                                 </Menu.Item>
@@ -87,6 +88,7 @@ export default function Home() {
                                             <a
                                                 href="https://twitter.com/intent/tweet?text=Keep%20up%20to%20date%20with%20the%20curfew%20dates%20in%20Jamaica%20by%20adding%20them%20to%20your%20calendar%20via%20https%3A%2F%2Fja-curfew-calendar.vercel.app%21"
                                                 target="_blank"
+                                                rel="noopener noreferrer"
                                                 className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
                                             >
                                                 <ShareIcon className="mr-3 h-6 w-6" aria-hidden="true"/>
