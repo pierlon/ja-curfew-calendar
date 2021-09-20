@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.4.1",
+    "@heroicons/react": "^1.0.4",
     "ical-generator": "^3.0.0",
     "luxon": "^2.0.2",
     "next": "11.1.2",
