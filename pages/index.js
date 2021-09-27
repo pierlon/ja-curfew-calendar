@@ -120,6 +120,7 @@ export default function Home({ events, twitterUrl }) {
                                             { calendars.map((calendar) => (
                                                 <Menu.Item key={ calendar.name }>
                                                     {({ active }) => (
+                                                        // eslint-disable-next-line react/jsx-no-target-blank
                                                         <a
                                                         href={calendar.url}
                                                         target={calendar.external ? '_blank' : null}
@@ -159,6 +160,7 @@ export default function Home({ events, twitterUrl }) {
                                     <div className="mt-5 sm:mt-8 sm:flex sm:flex-col space-y-4">
                                         { calendars.map((calendar) => (
                                             <div key={ calendar.name } className="rounded-md shadow">
+                                                {/* eslint-disable-next-line react/jsx-no-target-blank */}
                                                 <a
                                                     href={calendar.url}
                                                     target={calendar.external ? '_blank' : null}
