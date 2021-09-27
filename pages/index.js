@@ -258,7 +258,7 @@ export async function getStaticProps() {
     const allEvents = [].concat(mappedEvents, mappedOccurrences);
 
     const tweetParams = [
-        ['text', 'Check out the website by @pie_rlo that allows you to keep track of the curfews in Jamaica, with the option of adding them to your personal calendar!'],
+        ['text', 'Check out the website by @pie_rlo that allows you to keep track and get live updates of the ongoing curfews in Jamaica!'],
         ['url', `https://${domain}`],
     ].map(([key, val]) => `${key}=${encodeURIComponent(val)}`)
     .join('&')
