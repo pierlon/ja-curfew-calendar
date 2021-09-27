@@ -23,6 +23,14 @@ export default {
       locale: 'en_US',
       url: `https://${domain}/`,
       site_name: 'Jamaica Curfew Calendar',
+      images: [
+          {
+              url: `https://${domain}/og_image.jpg`,
+              width: 1200,
+              height: 700,
+              type: 'image/jpeg',
+          }
+      ]
     },
     twitter: {
       handle: '@pie_rlo',
