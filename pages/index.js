@@ -92,7 +92,7 @@ export default function Home({ events, twitterUrl }) {
                     <div className="max-w-full mx-auto sm:px-6 lg:px-36">
                         <div className="px-4 pb-8 sm:px-0">
                             <p className="block text-center pb-2 lg:hidden">
-                                Keep up to date with the <span className="text-primary font-semibold">curfews</span> by adding them to your calendar.
+                                Get <span className="text-primary font-semibold">live updates</span> on curfews by adding them to your calendar.
                             </p>
                             <Menu as="div" className="relative block text-left lg:hidden">
                                 <div>
@@ -146,7 +146,7 @@ export default function Home({ events, twitterUrl }) {
                                         </span>
                                     </h1>
                                     <p className="mt-3 text-base text-gray-900 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                                        Be reminded of when the next curfew starts by adding the schedule to
+                                        Get <span className="font-semibold">live updates</span> on curfews by adding the schedule to
                                         your favourite calendar.
 
                                         <span className="inline lg:hidden">
