@@ -61,4 +61,8 @@
     a.fc-daygrid-block-event:hover {
         @apply bg-primary-dark
     }
+
+    .fc-daygrid-block-event.fc-event-end .fc-event-time {
+        display: none;
+    }
 }
