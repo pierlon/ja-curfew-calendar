@@ -56,13 +56,6 @@ function onEventMount({ event, el }) {
 export default function Home({ events, twitterUrl }) {
     return (
         <div className="relative bg-gray-100 min-h-screen overflow-hidden">
-            <Head>
-                <title>Jamaica Curfew Calendar</title>
-                {/* todo: */}
-                <meta name="description" content="" />
-                <link rel="icon" href=":data" />
-            </Head>
-
             <nav className="bg-primary text-white shadow-sm">
                 <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-36">
                     <div className="flex justify-between h-16 leading-5">
