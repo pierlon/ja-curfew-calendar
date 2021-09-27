@@ -7,7 +7,7 @@
         },
         {
             "source": "/calendar/apple",
-            "destination": "webcal://ja-curfew-calendar.vercel.app/api/calendar",
+            "destination": "webcal://jacurfews.live/api/calendar",
             "statusCode": 301 },
         {
             "source": "/calendar/google",
