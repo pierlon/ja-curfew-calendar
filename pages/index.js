@@ -91,14 +91,14 @@ export default function Home({ events, twitterUrl }) {
                 <main>
                     <div className="max-w-full mx-auto sm:px-6 lg:px-36">
                         <div className="px-4 pb-8 sm:px-0">
-                            <p className="block text-center pb-2">
+                            <p className="block text-center pb-2 lg:hidden">
                                 Keep up to date with the <span className="text-primary font-semibold">curfews</span> by adding them to your calendar.
                             </p>
                             <Menu as="div" className="relative block text-left lg:hidden">
                                 <div>
                                     <Menu.Button className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-primary">
-                                    Add to my calendar
-                                    <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
+                                        Add to my calendar
+                                        <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
                                     </Menu.Button>
                                 </div>
 
