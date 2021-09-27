@@ -41,9 +41,9 @@ function onEventMount({ event, el }) {
     const endDate = formatDate(end, dateFormat)
 
     const template = `
-        <h1>${title}</h1>
-        <p>Starts: ${startDate}</p>
-        <p>Ends: ${endDate}</p>
+        <h1 class="text-lg font-semibold mb-2">${title}</h1>
+        <p><span class="font-semibold">Starts:</span> ${startDate}</p>
+        <p><span class="font-semibold">Ends:</span> ${endDate}</p>
     `
 
     tippy(el, {
