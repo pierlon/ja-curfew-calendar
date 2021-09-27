@@ -158,8 +158,9 @@ export default function Home({ events, twitterUrl }) {
                                                     href={calendar.url}
                                                     target={calendar.external ? '_blank' : null}
                                                     rel={calendar.external ? 'noopener noreferrer' : null}
-                                                    className="grid grid-cols-3 gap-2 px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary-dark md:py-4 md:text-lg md:px-10 sm:max-w-xl lg:max-w-none"
+                                                    className="grid grid-cols-3 gap-2 px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary-dark md:py-4 md:text-lg md:px-10 lg:px-4 sm:max-w-xl lg:max-w-none"
                                                 >
+                                                    {/* todo: fix misaligned link text in 1024px viewport */}
                                                     <calendar.icon className="w-6 h-6 justify-self-end" aria-hidden="true" />
                                                     <span className="justify-self-start col-span-2">{calendar.name}</span>
                                                 </a>
