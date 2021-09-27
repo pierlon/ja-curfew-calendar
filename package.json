@@ -9,19 +9,26 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fullcalendar/daygrid": "^5.9.0",
+    "@fullcalendar/react": "^5.9.0",
     "@headlessui/react": "^1.4.1",
     "@heroicons/react": "^1.0.4",
+    "ical-expander": "^3.1.0",
     "ical-generator": "^3.0.0",
     "luxon": "^2.0.2",
     "next": "11.1.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "tippy.js": "^6.3.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.4",
+    "babel-plugin-inline-react-svg": "^2.0.1",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
+    "next-transpile-modules": "^8.0.0",
     "postcss": "^8.3.6",
+    "sass": "^1.42.1",
     "tailwindcss": "^2.2.15"
   }
 }

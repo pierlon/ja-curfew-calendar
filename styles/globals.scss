@@ -1,0 +1,12 @@
+@import "./Home";
+
+:root {
+    // Tailwind colors.
+    --color-primary: theme('colors.green.600');
+    --color-primary-light: theme('colors.green.200');
+    --color-primary-dark: theme('colors.green.700');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

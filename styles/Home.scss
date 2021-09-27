@@ -1,0 +1,64 @@
+:root {
+    // Full Calendar variables.
+    // See https://github.com/fullcalendar/fullcalendar/blob/620efb5e9c023f229a22af31e10b8b810fa5b2ba/packages/common/src/styles/vars.css.
+    --fc-event-bg-color: var(--color-primary);
+    --fc-event-border-color: var(--color-primary);
+
+    --fc-button-text-color: theme('colors.gray.500');
+    --fc-button-bg-color: theme('colors.white');
+    --fc-button-border-color: theme('colors.gray.300');
+    --fc-button-hover-bg-color: theme('colors.gray.200');
+    --fc-button-hover-border-color: theme('colors.gray.300');
+    --fc-button-active-bg-color: theme('colors.gray.200');
+    --fc-button-active-border-color: theme('colors.gray.300');
+
+    --fc-border-color: theme('colors.gray.200');
+
+    --fc-today-bg-color: theme('colors.yellow.100');
+}
+
+.fc:not(_) {
+    .fc-button-primary:focus {
+        @apply ring-2 ring-gray-500 ring-opacity-50
+    }
+
+    .fc-toolbar.fc-header-toolbar {
+        @apply mb-0 py-2 px-2 lg:px-6
+    }
+
+    .fc-toolbar-title {
+        @apply text-lg font-bold text-gray-800
+    }
+
+    .fc-scrollgrid {
+        @apply border-l-0
+    }
+
+    .fc-scrollgrid-section > * {
+        @apply border-r-0
+    }
+
+    .fc-col-header-cell a {
+        @apply uppercase text-gray-600 text-sm tracking-wide 
+    }
+
+    .fc-daygrid-day-number {
+        @apply text-gray-700
+    }
+
+    a.fc-event {
+        @apply cursor-pointer
+    }
+
+    a.fc-daygrid-dot-event:hover {
+        & > .fc-daygrid-event-dot {
+            border-color: theme('colors.white');
+        }
+
+        @apply bg-primary text-white
+    }
+
+    a.fc-daygrid-block-event:hover {
+        @apply bg-primary-dark
+    }
+}
