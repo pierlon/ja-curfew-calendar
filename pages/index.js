@@ -23,7 +23,7 @@ function classNames(...classes) {
 
 const calendars = [
     { name: 'Add to Google Calendar', url: '/calendar/google', icon: GoogleIcon, external: true },
-    { name: 'Add to Apple Calendar', url: '/calendar/apple', icon: AppleIcon },
+    { name: 'Add to Apple Calendar', url: 'webcal://jacurfews.live/api/calendar', icon: AppleIcon },
     { name: 'Download iCalendar file', url: '/calendar.ics', icon: CalendarIcon },
 ]
 

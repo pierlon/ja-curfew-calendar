@@ -8,7 +8,8 @@
         {
             "source": "/calendar/apple",
             "destination": "webcal://jacurfews.live/api/calendar",
-            "statusCode": 301 },
+            "statusCode": 301
+        },
         {
             "source": "/calendar/google",
             "destination": "https://calendar.google.com/calendar?cid=cDJ0Z2k1NzY0aG11dDhzOHA2Nmw0ZnE2dXNudGtsZjBAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20",
