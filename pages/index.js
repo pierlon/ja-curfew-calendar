@@ -48,7 +48,7 @@ function onEventMount({ event, el }) {
 
     tippy(el, {
         content: template,
-        trigger: 'click',
+        trigger: 'mouseenter click',
         allowHTML: true,
     })
 }
