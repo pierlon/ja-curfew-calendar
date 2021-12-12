@@ -48,7 +48,7 @@ function onEventMount({ event, el }) {
 
     tippy(el, {
         content: template,
-        trigger: 'click',
+        trigger: 'mouseenter click',
         allowHTML: true,
     })
 }
@@ -220,7 +220,7 @@ export default function Home({ events, twitterUrl }) {
                                         <span className="sr-only sm:not-sr-only">on Twitter</span>
                                     </p>
                                 </a>
-                                
+
                                 <a href="https://github.com/pierlon/ja-curfew-calendar" rel="noopener noreferrer" target="_blank" className="inline-flex items-center font-medium space-x-2">
                                     <GitHubIcon className="w-5 h-5" aria-hidden="true" />
                                     <p>
@@ -233,8 +233,6 @@ export default function Home({ events, twitterUrl }) {
                     </div>
                 </footer>
             </div>
-
-            {/* <Notification /> */}
         </div>
     )
 }
@@ -242,7 +240,7 @@ export default function Home({ events, twitterUrl }) {
 export async function getStaticProps() {
     const ics = generateCalendar().toString()
     const icsExpander = new iCalExpander({ ics, maxIterations: 1000 })
-    
+
     const events = icsExpander.all()
     // todo: keep timezone
     const mappedEvents = events.events.map(e => ({
